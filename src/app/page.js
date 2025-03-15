@@ -1,13 +1,15 @@
 import styles from "./page.module.css";
 import SearchWrapper from "./components/search-wrapper/search-wrapper.component";
 import ProductGrid from "./components/products-grid/product-grid.component";
+import logic from "@/logic/index"
 
-export default function Home() {
 
+export default async function Home() {
+  let productsList = await logic.getProductsList()
   return (
     <div>
-      <SearchWrapper/>
-      <ProductGrid/>
+      <SearchWrapper />
+      <ProductGrid productsList={productsList} />
     </div>
   );
 }
