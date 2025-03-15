@@ -1,0 +1,17 @@
+.mainFrame{
+    width:1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.imageFrame{
+    height: 630px;
+    width: 510px;
+    position: relative;
+}
+
+.productInfoFrame{
+    width: 380px;
+}
