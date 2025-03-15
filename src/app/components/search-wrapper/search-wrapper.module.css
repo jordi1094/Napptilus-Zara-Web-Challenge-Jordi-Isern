@@ -1,0 +1,6 @@
+.searchWrapper {
+    padding:12px 100px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    }
