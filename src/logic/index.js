@@ -1,7 +1,9 @@
 import getProductsList from "./getProductsList";
+import getProductDetails from "./getProductDetails";
 
 const logic = {
-    getProductsList
+    getProductsList,
+    getProductDetails
 }
 
 export default logic

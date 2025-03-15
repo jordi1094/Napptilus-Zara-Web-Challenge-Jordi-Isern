@@ -16,6 +16,5 @@ export default async function getProductsList (searchQuery) {
         
     }catch(error){
         throw new Error(`Error ${error.message}`)
-        return null
     }
 }
