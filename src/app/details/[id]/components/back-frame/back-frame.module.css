@@ -1,0 +1,20 @@
+.frame{
+    padding: 12px 100px;
+    gap: 4px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon{
+    width: 5.06px;
+    height: 8.71px;
+}
+
+.title{
+    font-size: 12px;
+    font-weight: 300;
+}

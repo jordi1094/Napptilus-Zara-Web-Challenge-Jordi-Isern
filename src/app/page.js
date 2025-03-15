@@ -6,6 +6,7 @@ import logic from "@/logic/index"
 
 export default async function Home() {
   let productsList = await logic.getProductsList()
+  console.log(productsList)
   return (
     <div>
       <SearchWrapper />
