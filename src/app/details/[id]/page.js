@@ -4,8 +4,9 @@ import style from "./page.module.css"
 import logic from "@/logic/index"
 
 export default async function details({params}) {
-    const { id } = params
-    const product = await logic.getProductDetails(id)
+    params = await params
+
+    const product = await logic.getProductDetails(params.id)
 
 
     return (

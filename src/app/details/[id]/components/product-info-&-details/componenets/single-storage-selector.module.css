@@ -1,0 +1,17 @@
+.selected{
+    border: 1px solid black;
+    padding: 24px;
+}
+.unselected{
+    border: 1px solid #CCCCCC;
+    padding: 24px;
+    padding: 24px;
+    align-items: center;
+}
+
+.text{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+

@@ -15,3 +15,8 @@
 .productInfoFrame{
     width: 380px;
 }
+
+.titleAndPrice{
+    width: fill;
+    gap: 11px;
+}
