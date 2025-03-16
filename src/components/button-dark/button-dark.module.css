@@ -1,0 +1,28 @@
+.buttonEnable{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 8%;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background-color: var(--SDS-Semantic-Highlight-Default);
+}
+.buttonEnable:hover{
+    background-color: var(--SDS-Semantic-Highlight-Hover);
+}
+.buttonEnable:active{
+    background-color: var(--SDS-Semantic-Highlight-Active);
+}
+
+.buttonDissable{
+
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 8%;
+    align-content: center;
+    text-align: center;
+    color: #C2BFBC;
+    background-color: var(--SDS-Background-States-Disabled);
+}

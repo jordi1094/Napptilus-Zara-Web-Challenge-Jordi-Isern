@@ -1,0 +1,17 @@
+.frame{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 40px;
+}
+
+.title{
+    height: 24px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.spectsList{
+    border-top: 0.5px solid black;
+}

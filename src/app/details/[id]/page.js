@@ -1,5 +1,6 @@
 import BackFrame from "./components/back-frame/back-frame.component"
 import ProducInfoAndDetails from "./components/product-info-&-details/product-info-&-details.component"
+import ProductSpecsFrame from "./components/producs-specs/product-specs-frame.component"
 import style from "./page.module.css"
 import logic from "@/logic/index"
 
@@ -10,9 +11,12 @@ export default async function details({params}) {
 
 
     return (
-        <div>
+        <div className={style.page}>
             <BackFrame/>
-            <ProducInfoAndDetails product={product}/>
+            <div className={style.product}>
+                <ProducInfoAndDetails product={product}/>
+                <ProductSpecsFrame specs={product.specs}/>
+            </div>
         </div>
     )
 }

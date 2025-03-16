@@ -1,6 +1,7 @@
 .frame{
     padding: 12px 100px;
     gap: 4px;
+    align-self: self-start;
 }
 
 .link{

@@ -12,6 +12,10 @@
     position: relative;
 }
 
+.image{
+    object-fit: contain;
+}
+
 .productInfoFrame{
     display: flex;
     flex-direction: column;
@@ -52,5 +56,11 @@
     font-weight: 300;
     width: 305px;
     height: 17px;
+}
+
+.colorName{
+    height: 15px;
+    font-size: 12px;
+    font-weight: 300;
 }
 

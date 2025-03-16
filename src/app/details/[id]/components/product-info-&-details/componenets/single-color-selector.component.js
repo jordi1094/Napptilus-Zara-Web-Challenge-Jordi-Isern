@@ -3,7 +3,7 @@ import styles from "./single-color-selector.module.css"
 export default function SingleColorSelector ({color, selectedColor, onClick}){
     let status = false
     const {hexCode} = color
-    if(hexCode === selectedColor.hexCode){
+    if(selectedColor && hexCode === selectedColor.hexCode){
         status = true
     }
 

@@ -3,7 +3,7 @@ import styles from "./single-storage-selector.module.css"
 
 export default function SingleStorageSelector ({storage, selectedStorage, onClick}) {
     let status = false
-    if(selectedStorage.capacity === storage.capacity){
+    if(selectedStorage && selectedStorage.capacity === storage.capacity){
         status = true 
     }
     
