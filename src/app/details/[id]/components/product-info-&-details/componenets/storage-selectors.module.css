@@ -1,6 +1,4 @@
-.frame{
+.frame {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: fill;
-    padding: 24px;
+    grid-template-columns: repeat(3, 1fr);
 }

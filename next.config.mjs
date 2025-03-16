@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['prueba-tecnica-api-tienda-moviles.onrender.com'],
+      remotePatterns: [{
+        protocol:"http",
+        hostname:'prueba-tecnica-api-tienda-moviles.onrender.com'
+      },
+      {
+        protocol:"https",
+        hostname:'prueba-tecnica-api-tienda-moviles.onrender.com'
+      }],
     },
   };
   

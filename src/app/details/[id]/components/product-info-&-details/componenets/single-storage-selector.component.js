@@ -6,6 +6,7 @@ export default function SingleStorageSelector ({storage, selectedStorage, onClic
     if(selectedStorage.capacity === storage.capacity){
         status = true 
     }
+    
     return(
         <div onClick={onClick} className={status ? styles.selected : styles.unselected}>
             <h6  className={styles.text}>{storage.capacity}</h6>

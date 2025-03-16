@@ -1,0 +1,18 @@
+.selected{
+    width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.unselected{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    padding: 1px;
+}
+
+.color{
+    width: 100%;
+    height: 100%;
+}

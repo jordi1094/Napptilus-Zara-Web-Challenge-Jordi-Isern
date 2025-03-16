@@ -13,10 +13,44 @@
 }
 
 .productInfoFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
     width: 380px;
 }
 
 .titleAndPrice{
+    display: flex;
+    flex-direction: column;
     width: fill;
     gap: 11px;
 }
+
+.title{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.price{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.selectors{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.selectorFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.selectorTitle{
+    font-size: 14px;
+    font-weight: 300;
+    width: 305px;
+    height: 17px;
+}
+
