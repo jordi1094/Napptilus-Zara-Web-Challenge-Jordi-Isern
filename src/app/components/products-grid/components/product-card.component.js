@@ -6,7 +6,7 @@ export default function ProductCard({product}) {
     return(
         <Link href={`/details/${product.id}`}className={styles.box}>
             <div className={styles.imageFrame}>
-                <Image className={styles.image} fill src={product.imageUrl} alt={`Image from the phone ${product.name}`}/>
+                <Image className={styles.image} fill objectFit="contain" priority src={product.imageUrl} alt={`Image from the phone ${product.name}`}/>
             </div>
             <div className={styles.infoFrame}>
                 <div>

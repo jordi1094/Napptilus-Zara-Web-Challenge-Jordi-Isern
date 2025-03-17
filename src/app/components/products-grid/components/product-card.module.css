@@ -1,7 +1,7 @@
 .box{
     display: flex;
     height: 344px;
-    width: auto;
+    width: 344px;
     flex-direction: column;
     padding: 16px;
     border-style: solid;
@@ -11,7 +11,7 @@
 }
 
 .image{
-    object-fit: contain;
+    object-fit: scale-down;
 
 }
 .imageFrame{

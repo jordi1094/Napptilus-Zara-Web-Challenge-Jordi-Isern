@@ -1,4 +1,5 @@
 "use client"
+import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import style from "./product-info-and-img.module.css"
 import Image from "next/image"
@@ -8,6 +9,7 @@ import ButtonDark from "@/components/button-dark/button-dark.component"
 
 export default function ProducInfoAndDetails ({product}) {
     const {name, storageOptions, colorOptions, id } = product
+    const router = useRouter()
 
     const [selectedColor, setSelectedColor] = useState()
     const [selectedStorage, setSelectedStorage] = useState()
@@ -19,7 +21,7 @@ export default function ProducInfoAndDetails ({product}) {
         }
     },[selectedColor, selectedStorage])
     
-    const onclickAddToCart = (id, selectedColor, selectedStorage)=>{
+    const onclickAddToCart = async (id, selectedColor, selectedStorage)=>{
         let productsInCart = []
         const productTobuy = {
             id,
@@ -30,7 +32,7 @@ export default function ProducInfoAndDetails ({product}) {
             productsInCart = JSON.parse(sessionStorage.cart)
         }
         productsInCart.push(productTobuy)
-        sessionStorage.cart = JSON.stringify(productsInCart)
+        sessionStorage.cart = await JSON.stringify(productsInCart)
     }
 
     return (

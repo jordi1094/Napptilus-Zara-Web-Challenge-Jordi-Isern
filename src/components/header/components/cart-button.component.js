@@ -3,11 +3,18 @@ import styles from "./cart-button.module.css"
 import bagIconInactive from "@/assets/icons/bag-inactive.svg";
 import bagIconActive from "@/assets/icons/bag-active.svg"
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function CartButton (){
     const [numOfProducts, setNumOfProducts] = useState(0)
+
+    useEffect(() => {
+        const cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : []
+
+        setNumOfProducts(cart.length)
+        console.log(cart)
+    },[])
 
     return (
         <Link href={"/cart"} className={styles.box}>

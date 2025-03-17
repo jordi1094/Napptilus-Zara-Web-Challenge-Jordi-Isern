@@ -1,0 +1,14 @@
+.frame{
+    width: 1200px;
+    padding-bottom: 104px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title{
+    width: 100%;
+    font-size: 20px;
+    height: 24px;
+    font-weight: 300;
+}

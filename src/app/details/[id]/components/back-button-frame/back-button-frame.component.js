@@ -3,7 +3,7 @@ import style from "./back-frame.module.css"
 import Link from "next/link"
 import Image from "next/image"
 
-export default function BackFrame () {
+export default function BackButtonFrame () {
     return(
         <div className={style.frame}>
             <Link href="/" className={style.link}>
