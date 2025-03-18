@@ -12,13 +12,15 @@ export default async function details({params}) {
 
     const product = await logic.getProductDetails(params.id)
     return (
-        <div className={style.page}>
-            <Header/>
-            <BackButtonFrame/>
-            <div className={style.product}>
-                <ProducInfoAndDetails product={product}/>
-                <ProductSpecsFrame specs={product.specs}/>
-                <SimilarProducts similarProducts={product.similarProducts}/>
+        <div>    
+            <div className={style.page}>
+                <Header/>
+                <BackButtonFrame/>
+                <div className={style.product}>
+                    <ProducInfoAndDetails product={product}/>
+                    <ProductSpecsFrame specs={product.specs}/>
+                    <SimilarProducts similarProducts={product.similarProducts}/>
+                </div>
             </div>
         </div>
     )

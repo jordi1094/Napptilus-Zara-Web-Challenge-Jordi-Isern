@@ -3,12 +3,13 @@ import style from "./carousel.module.css"
 
 export default function Carousel ({similarProducts}){
     return (
-        <div className={style.carousel}>
+        <div className={style.carouselContainer} style={{gridTemplateColumns: `repeat(${similarProducts.length}, auto)`}}>
             {similarProducts.map((product, index) => {
                 return(
-                <ProductCard key={index} product={product}/>
+                    <ProductCard key={index} product={product}/>
                 )
             })}
+            
         </div>
     )
 }

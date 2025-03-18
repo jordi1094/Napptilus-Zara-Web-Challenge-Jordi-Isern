@@ -3,7 +3,6 @@ import style from "./product-specs-frame.module.css"
 
 export default function ProductSpecsFrame ({specs}) {
     const spectsList = Object.keys(specs)
-    console.log(specs)
     return (
         <div className={style.frame}>
             <h4 className={style.title}>SPECIFICATIONS</h4>
