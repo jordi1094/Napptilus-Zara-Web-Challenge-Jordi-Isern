@@ -19,9 +19,9 @@ export default async function details({params}) {
                 <div className={style.product}>
                     <ProducInfoAndDetails product={product}/>
                     <ProductSpecsFrame specs={product.specs}/>
-                    <SimilarProducts similarProducts={product.similarProducts}/>
                 </div>
             </div>
+            <SimilarProducts similarProducts={product.similarProducts}/>
         </div>
     )
 }

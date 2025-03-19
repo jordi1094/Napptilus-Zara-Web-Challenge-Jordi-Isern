@@ -10,10 +10,9 @@ export default function CartButton (){
     const [numOfProducts, setNumOfProducts] = useState(0)
 
     useEffect(() => {
-        const cart = sessionStorage.cart ? JSON.parse(sessionStorage.cart) : []
+        const cart = localStorage.cart ? JSON.parse(localStorage.cart) : []
 
         setNumOfProducts(cart.length)
-        console.log(cart)
     },[])
 
     return (

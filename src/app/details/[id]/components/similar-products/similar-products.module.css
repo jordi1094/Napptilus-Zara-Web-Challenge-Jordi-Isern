@@ -1,9 +1,11 @@
 .frame{
-    width: 1200px;
+    padding-top: 154px;
+    width: 100vw;
     padding-bottom: 104px;
     display: grid;
     flex-direction: column;
     gap: 40px;
+
 }
 
 .title{
@@ -11,4 +13,5 @@
     font-size: 20px;
     height: 24px;
     font-weight: 300;
+    margin-left: calc((100vw - 1200px) /2);
 }

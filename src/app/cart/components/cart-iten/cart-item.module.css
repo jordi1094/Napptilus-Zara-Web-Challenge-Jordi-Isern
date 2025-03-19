@@ -1,0 +1,9 @@
+.cartItem{
+    width: 548px;
+    position: relative;
+    display: flex;
+}
+
+.itemImage{
+    object-fit: scale-down;
+}

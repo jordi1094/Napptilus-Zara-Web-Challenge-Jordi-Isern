@@ -1,13 +1,17 @@
 .box{
     display: flex;
     height: 344px;
-    width: 344px;
+    width: 100%;
+    min-width: 344px;
     flex-direction: column;
     padding: 16px;
     border-style: solid;
     border-color: black;
-    border-width: 0 0.5px 0.5px 0;
+    border-width: 0.5px;
     gap: 24px;
+    border-collapse: collapse;
+    background: black linear-gradient(to top, white 0% , white 100%) no-repeat;
+    background-size: 100% 100% ;
 }
 
 .image{
@@ -41,3 +45,14 @@
     font-weight: 300;
 }
 
+.box:hover{
+  animation: slideColor 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; 
+}
+
+.box:hover *{
+    color:white;
+}
+
+@keyframes slideColor {
+    to { background-size: 100% 0%; }
+  }
