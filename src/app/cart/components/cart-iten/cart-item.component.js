@@ -1,20 +1,21 @@
 import style from "./cart-item.module.css"
 import Image from "next/image"
+import CartIntemInfo from "./components/cart-item-info.component"
+import DeleteItemButton from "./components/delete-item-button.component"
 
-export default function CartItem ({product}) {
-    const productName = product.name.toUpperCase()
+export default function CartItem ({product, index, onDeleteItem}) {
     const productColor = product.selectedColor.name.toUpperCase()
+    const productName = product.name.toUpperCase()
     const productCapacity = product.selectedStorage.capacity.toUpperCase()
-    const productPrice = product.selectedColor.price
-    console.log(product)
+    const productPrice = product.selectedStorage.price
+    
     return (
         <div className={style.cartItem}>
-            <Image className={style.itemImage} src={product.selectedColor.imageUrl} fill alt={`image from ${productName} in color ${productColor}`}/>
             <div className={style.infoAndDelete}>
-                <h5 className={style.productName}>{productName}</h5>
-                <h5 className={style.productCapacityAndColor}>{productCapacity} | {productColor}</h5>
-                <h6 className={style.productPrice}>{productPrice}</h6>
+                <CartIntemInfo onDeleteItem={onDeleteItem} productName={productName} productCapacity={productCapacity} productColor={productColor} productPrice={productPrice}/>
+                <DeleteItemButton index={index}/>
             </div>
+            <Image className={style.itemImage}  src={product.selectedColor.imageUrl} fill alt={`image from ${productName} in color ${productColor}`}/>
         </div>
     )
 }

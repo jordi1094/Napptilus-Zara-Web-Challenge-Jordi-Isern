@@ -1,8 +1,9 @@
 import localStorage from "../localStorage";
-
-export default function addProduct (product) {
+export default function deleteProduct (index) {
     const data = localStorage.get("cart")
 
-    data.push(product)
+    
+    data.splice(index, 1)
+
     localStorage.post(data, "cart")
 }
