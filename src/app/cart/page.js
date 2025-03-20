@@ -21,7 +21,7 @@ export default function Cart() {
 
     
     return(
-        <div>
+        <div className={style.page}>
             <CartHeader/>
             <div className={style.main}>
                 <CartCounter productsInCart = {productsInCart}/>
