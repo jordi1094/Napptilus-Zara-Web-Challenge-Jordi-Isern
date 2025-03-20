@@ -1,4 +1,6 @@
 .frame{
+    position: fixed;
+    top: 80px;
     padding: 12px 100px;
     gap: 4px;
     align-self: self-start;
@@ -18,3 +20,8 @@
     font-weight: 300;
 }
 
+@media screen and (max-width: 768px){
+    .frame{
+        padding: 12px 16px;
+    }
+}

@@ -19,8 +19,6 @@ export default function ProducInfoAndDetails ({product}) {
             <div className={style.productInfoFrame}>
                 <ProductInfoFrame product={product} selectedStorage={selectedStorage}/>
                 <SelectorsFrame storageOptions={storageOptions} colorOptions={colorOptions} selectedStorage={selectedStorage} selectedColor={selectedColor} setSelectedStorage={setSelectedStorage} setSelectedColor={setSelectedColor}/>
-                {//compo buttonaddtocard + logica add to cart
-                }
                 <AddToCartButton name={product.name} selectedColor={selectedColor} selectedStorage={selectedStorage}/>
             </div>
         </div>

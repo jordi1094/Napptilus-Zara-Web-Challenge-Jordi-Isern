@@ -23,5 +23,23 @@
     width: 380px;
 }
 
+@media screen and (max-width: 768px){
+    .mainFrame{
+        width: 100vw;
+        flex-direction: column;
+        align-items: start;
+        padding: 0 16px;
+        gap: 40px;
+    }
+    .imageFrame{
+        width: 260px;
+        height: 273px;
+    }
+    .productInfoFrame{
+        width: 100%;
+        gap: 40px;
+    }
+}
+
 
 

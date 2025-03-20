@@ -5,13 +5,11 @@
 .unselected{
     border: 1px solid #CCCCCC;
     padding: 24px;
-    padding: 24px;
     align-items: center;
 }
 
 .text{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     text-align: center;
 }
-

@@ -1,4 +1,4 @@
-import style from "./selector-frame.module.css"
+import style from "./selectors-frame.module.css"
 import StorageSelectors from "./storage-selectors.component"
 import ColorsSelectors from "./colors-selectors.component"
 

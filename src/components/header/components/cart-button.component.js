@@ -18,7 +18,7 @@ export default function CartButton (){
     return (
         <Link href={"/cart"} className={styles.box}>
             {numOfProducts === 0 ? <Image src={bagIconInactive} alt="Icon from bag empty"/> : <Image src={bagIconActive} alt="Icon from a bag full"/>}
-            <p>{numOfProducts}</p>
+            <p className={styles.text}>{numOfProducts}</p>
         </Link>
     )
 

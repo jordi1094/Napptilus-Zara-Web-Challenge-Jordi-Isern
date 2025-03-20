@@ -13,7 +13,6 @@ export default function Home() {
   
   useEffect(() => {
     const getProducts = async () => {
-      console.log(searchQuery)
       const products = await logic.getProductsList(searchQuery)
 
       setProdcutsList(products)
@@ -22,7 +21,7 @@ export default function Home() {
   },[searchQuery])
 
   return (
-    <div>
+    <div className={styles.page}>
       <Header/> 
       <SearchWrapper numOfPoducts={productsList.length} onSearch={setSearchQuery}/>
       <ProductGrid productsList={productsList} />

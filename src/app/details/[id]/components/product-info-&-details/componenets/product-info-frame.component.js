@@ -1,6 +1,7 @@
 import style from "./product-info-frame.module.css"
 
 export default function ProductInfoFrame ({product, selectedStorage}) {
+    //TODO ADD FROM on proce not defined
     return (
         <div className={style.titleAndPrice}>
                             <h4 className={style.title}>{product.name.toUpperCase()}</h4>

@@ -22,3 +22,14 @@
     font-size: 12px;
     font-weight: 300;
 }
+
+@media screen and (max-width: 768px){
+    .selectors{
+        padding-bottom: 24px;
+        gap: 32px;
+        
+    }
+    .selectorFrame{
+        width: 273px;
+    }
+}
