@@ -11,3 +11,5 @@ const cart = {
 }
 
 export default cart
+
+// TODO mover CART a logic 

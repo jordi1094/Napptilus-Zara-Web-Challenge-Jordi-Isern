@@ -5,3 +5,5 @@ export default function CartCounter ({productsInCart}) {
             <h6 className={style.title}>{`CART (${productsInCart.length})`}</h6>
     )
 }
+
+// TODO cambiar carpetas a camelCase y funciones jsx y llamar index.jsx

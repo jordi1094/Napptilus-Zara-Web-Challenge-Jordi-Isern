@@ -9,3 +9,5 @@ export default function ButtonDark ({status, customHeight, children, onClick}) {
         </div>
     )
 }
+
+// TODO mover components a app
