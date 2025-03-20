@@ -14,7 +14,7 @@ export default function ProducInfoAndDetails ({product}) {
     return (
         <div className={style.mainFrame}>
             <div className={style.imageFrame}>
-                <Image className={style.image} src= {selectedColor? selectedColor.imageUrl :colorOptions[0].imageUrl} fill alt={`Image from ${name} in color ${selectedColor ? selectedColor.name :colorOptions[0].name }`}/>
+                <Image className={`${style.image} object-contain`} src= {selectedColor? selectedColor.imageUrl :colorOptions[0].imageUrl} fill alt={`Image from ${name} in color ${selectedColor ? selectedColor.name :colorOptions[0].name }`}/>
             </div>
             <div className={style.productInfoFrame}>
                 <ProductInfoFrame product={product} selectedStorage={selectedStorage}/>

@@ -1,8 +1,8 @@
 import style from "./results-counter.module.css"
 
-export default function ResultsCounter({results}) {
+export default function ResultsCounter({numOfPoducts}) {
     
     return (
-        <p className={style.resultCounter}>{results.length} Results</p>
+        <p className={style.resultCounter}>{numOfPoducts} Results</p>
     )
 }

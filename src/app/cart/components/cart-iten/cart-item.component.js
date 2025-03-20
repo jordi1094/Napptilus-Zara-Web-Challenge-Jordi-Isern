@@ -15,7 +15,7 @@ export default function CartItem ({product, index, onDeleteItem}) {
                 <CartIntemInfo onDeleteItem={onDeleteItem} productName={productName} productCapacity={productCapacity} productColor={productColor} productPrice={productPrice}/>
                 <DeleteItemButton index={index}/>
             </div>
-            <Image className={style.itemImage}  src={product.selectedColor.imageUrl} fill alt={`image from ${productName} in color ${productColor}`}/>
+            <Image className={`${style.itemImage} object-contain`} priority  src={product.selectedColor.imageUrl} fill sizes="(max-width:768px) 100vw, (max-width:1200px) 60vw" alt={`image from ${productName} in color ${productColor}`}/>
         </div>
     )
 }

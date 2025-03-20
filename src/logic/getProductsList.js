@@ -1,6 +1,6 @@
 export default async function getProductsList (searchQuery) {
     try {
-        const url = searchQuery ? `https://prueba-tecnica-api-tienda-moviles.onrender.com/products?search=${searchQuery}&limit=20`: `https://prueba-tecnica-api-tienda-moviles.onrender.com/products?limit=20`
+        const url = searchQuery !== "" ? `https://prueba-tecnica-api-tienda-moviles.onrender.com/products?search=${searchQuery}&limit=20`: `https://prueba-tecnica-api-tienda-moviles.onrender.com/products?limit=20`
 
         const response = await fetch(url, {
                 headers:{

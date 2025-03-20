@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation"
 
 export default function FooterCart ({products}) {
     const router = useRouter()
-    console.log(products)
 
     const onClickLigthButton = () => {
         router.push("/")
