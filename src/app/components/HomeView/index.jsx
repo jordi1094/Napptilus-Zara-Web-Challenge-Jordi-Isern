@@ -1,15 +1,15 @@
 "use client"
 import styles from "./index.module.css";
-import SearchWrapper from "./components/SearchWrapper";
-import ProductGrid from "./components/ProductsGrid";
+import SearchWrapper from "../SearchWrapper";
+import ProductGrid from "../ProductsGrid";
 import Header from "@/components/header/header";
 import logic from "@/logic/index";
 import {useDebounce} from "@/hooks/useDebounce"
-import { useDebugValue, useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 
 
-export default function Home() {
-  const [productsList, setProdcutsList] = useState([])
+export default function Home({defaultProductList}) {
+  const [productsList, setProdcutsList] = useState(defaultProductList || [])
   const [searchQuery, setSearchQuery] = useState("")
   const searchValue = useDebounce(searchQuery, 100)
   

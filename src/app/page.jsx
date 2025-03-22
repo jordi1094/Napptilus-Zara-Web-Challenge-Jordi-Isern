@@ -1,7 +1,8 @@
 import HomeView from "./components/HomeView"
-
-export default function HomePage () {
+import logic from "@/logic"
+export default async function HomePage () {
+  const products = await logic.getProductsList()
   return (
-    <HomeView/>
+    <HomeView defaultProductList={products}/>
   )
 }
