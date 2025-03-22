@@ -26,7 +26,7 @@ export default function Cart() {
                 <CartCounter productsInCart = {productsInCart}/>
             {productsInCart.map((product, index) => {
                 return(
-                    <CartItem key={index} product={product} index={index} onDeleteItem={getProductsinCart}/>
+                    <CartItem key={index} product={product} role="listitem" index={index} onDeleteItem={getProductsinCart}/>
                 )
                 
             })}

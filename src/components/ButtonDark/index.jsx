@@ -1,5 +1,5 @@
 "use client"
-import style from "./button-dark.module.css"
+import style from "./index.module.css"
 
 export default function ButtonDark ({status, customHeight, children, onClick}) {
     
@@ -9,5 +9,3 @@ export default function ButtonDark ({status, customHeight, children, onClick}) {
         </div>
     )
 }
-
-// TODO mover components a app

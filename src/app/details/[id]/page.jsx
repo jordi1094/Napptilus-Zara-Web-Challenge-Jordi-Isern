@@ -1,6 +1,6 @@
 import style from "./page.module.css"
 import BackButtonFrame from "./components/BackButtonFrame"
-import ProducInfoAndDetails from "./components/ProductInfo&Details"
+import ProducInfoAndDetails from "./components/ProductInfoAndDetails"
 import ProductSpecsFrame from "./components/ProducsSpecs"
 import Header from "@/components/header/header"
 import logic from "@/logic/index"

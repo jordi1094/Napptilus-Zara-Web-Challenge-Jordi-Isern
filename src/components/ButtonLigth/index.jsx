@@ -1,5 +1,5 @@
 "use client"
-import style from "./button-ligth.module.css"
+import style from "./index.module.css"
 
 export default function ButtonLigth ({status, customHeight, children, onClick}) {
     

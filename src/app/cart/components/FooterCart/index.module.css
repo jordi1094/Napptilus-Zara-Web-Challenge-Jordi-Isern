@@ -22,12 +22,19 @@
 @media screen and (max-width: 768px){
     .frame{
         grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+        padding: 16px 16px 24px 16px;
     }
     .totalFrame{
         order: 1;
         gap: 24px;
+        grid-column: span 2;
+        justify-content: space-between;
     }
-    .ligthButton{
-        order: 2;
+    .buttonLigth{
+        order:2;
+    }
+    .buttonDark{
+        order:3;
     }
 }

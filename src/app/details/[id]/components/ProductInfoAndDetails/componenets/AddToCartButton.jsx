@@ -1,5 +1,5 @@
 "use client"
-import ButtonDark from "@/components/button-dark/button-dark.component"
+import ButtonDark from "@/components/ButtonDark"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import cart from "@/logic/cart"
@@ -11,6 +11,8 @@ export default function AddToCartButton ({name, selectedColor, selectedStorage})
     useEffect(() => {
         if (selectedColor && selectedStorage){
             setAddCartButtonStatus(true)         
+        }else{
+            setAddCartButtonStatus(false)
         }
     },[selectedColor, selectedStorage])
 
