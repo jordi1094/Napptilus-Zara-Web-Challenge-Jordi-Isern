@@ -34,7 +34,7 @@ export default function FooterCart({ products }) {
       </div>
       <div className={style.totalFrame}>
         <h6 className={style.text}>TOTAL</h6>
-        <h6 className={style.text}>{finalPrice}</h6>
+        <h6 className={style.text}>{`${finalPrice} EUR`}</h6>
       </div>
       <div className={style.buttonDark}>
         <ButtonDark status={isEnable()}>PAY</ButtonDark>
