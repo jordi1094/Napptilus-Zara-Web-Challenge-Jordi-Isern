@@ -10,7 +10,6 @@
 .carousel{
     padding-left: calc((100vw - 1200px) /2);
     margin-right: calc((100vw - 1200px)/2);
-    width: 1200pc;
     display: flex;
     overflow-x: visible;
 

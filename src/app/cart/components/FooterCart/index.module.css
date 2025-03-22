@@ -1,0 +1,33 @@
+.frame{
+    width: 100%;
+    display: grid;
+    grid-template-columns:260px 1fr 260px ;
+    gap: 80px;
+    padding: 24px 100px 56px 100px;
+}
+
+
+.totalFrame{
+    display: flex;
+    gap: 24px;
+    justify-content: end;
+    align-items: center;
+}
+.text{
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px){
+    .frame{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .totalFrame{
+        order: 1;
+        gap: 24px;
+    }
+    .ligthButton{
+        order: 2;
+    }
+}

@@ -10,3 +10,10 @@
     gap: 48px;
     padding: 48px 100px;
 }
+
+@media screen and (max-width: 768px){
+    .main{
+        width: 100%;
+        padding: 24px 16px;
+    }
+}
