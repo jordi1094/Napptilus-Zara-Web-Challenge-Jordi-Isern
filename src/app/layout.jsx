@@ -3,8 +3,8 @@ import "./globals.css";
 import Header from "@/components/header/header";
 
 export const metadata = {
-  title: "Movil web challenge",
-  description: "online shop challenge",
+  title: "Movil shop",
+  description: "online movile shop",
 };
 
 export default function RootLayout({ children }) {
