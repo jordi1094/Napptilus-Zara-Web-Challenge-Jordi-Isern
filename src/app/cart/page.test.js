@@ -6,11 +6,11 @@ jest.mock("@/logic/cart", () => ({
   getProdcuts: jest.fn(),
 }));
 
-jest.mock('next/navigation', () => ({
-    useRouter: jest.fn().mockReturnValue({
-      push: jest.fn(),
-    }),
-  }));
+jest.mock("next/navigation", () => ({
+  useRouter: jest.fn().mockReturnValue({
+    push: jest.fn(),
+  }),
+}));
 
 describe("Cart Component", () => {
   const mockProducts = [
@@ -20,7 +20,8 @@ describe("Cart Component", () => {
       selectedColor: {
         name: "Titanium Yellow",
         hexCode: "#FFFF00",
-        imageUrl: "https://prueba-tecnica-api-tienda-moviles.onrender.com/images/SMG-S24U-titanium-yellow.png",
+        imageUrl:
+          "https://prueba-tecnica-api-tienda-moviles.onrender.com/images/SMG-S24U-titanium-yellow.png",
       },
       selectedStorage: {
         capacity: "512 GB",
@@ -33,7 +34,8 @@ describe("Cart Component", () => {
       selectedColor: {
         name: "Titanio Natural",
         hexCode: "#DBCEC3",
-        imageUrl: "https://prueba-tecnica-api-tienda-moviles.onrender.com/images/APL-I15PM-titanio-natural.png",
+        imageUrl:
+          "https://prueba-tecnica-api-tienda-moviles.onrender.com/images/APL-I15PM-titanio-natural.png",
       },
       selectedStorage: {
         capacity: "256 GB",
@@ -41,8 +43,7 @@ describe("Cart Component", () => {
       },
     },
   ];
-  
-  
+
   beforeEach(() => {
     cart.getProdcuts.mockReturnValue(mockProducts);
   });
@@ -50,16 +51,23 @@ describe("Cart Component", () => {
   test("debería renderizar correctamente el carrito con productos", async () => {
     render(<Cart />);
 
-    expect(screen.getByRole('banner')).toBeInTheDocument();
+    expect(screen.getByRole("banner")).toBeInTheDocument();
 
     await waitFor(() => {
-      expect(screen.getByText(mockProducts[0].name.toUpperCase())).toBeInTheDocument();
-      expect(screen.getByText(mockProducts[1].name.toUpperCase())).toBeInTheDocument();
+      expect(
+        screen.getByText(mockProducts[0].name.toUpperCase()),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByText(mockProducts[1].name.toUpperCase()),
+      ).toBeInTheDocument();
     });
 
-    const totalPrice = mockProducts.reduce((sum, product) => sum + product.selectedStorage.price, 0);
+    const totalPrice = mockProducts.reduce(
+      (sum, product) => sum + product.selectedStorage.price,
+      0,
+    );
 
-    expect(screen.getByText(`${totalPrice}`)).toBeInTheDocument()
+    expect(screen.getByText(`${totalPrice}`)).toBeInTheDocument();
 
     mockProducts.forEach((product) => {
       expect(screen.getByText(product.name.toUpperCase())).toBeInTheDocument();

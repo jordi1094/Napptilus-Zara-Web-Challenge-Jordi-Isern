@@ -16,11 +16,15 @@ describe("CartItemInfo Component", () => {
         productCapacity={mockProduct.productCapacity}
         productColor={mockProduct.productColor}
         productPrice={mockProduct.productPrice}
-      />
+      />,
     );
 
     expect(screen.getByText(mockProduct.productName)).toBeInTheDocument();
-    expect(screen.getByText(`${mockProduct.productCapacity} | ${mockProduct.productColor}`)).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        `${mockProduct.productCapacity} | ${mockProduct.productColor}`,
+      ),
+    ).toBeInTheDocument();
     expect(screen.getByText(mockProduct.productPrice)).toBeInTheDocument();
   });
 });

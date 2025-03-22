@@ -1,45 +1,42 @@
-.mainFrame{
-    width:1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-self: center;
+.mainFrame {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
 }
 
-.imageFrame{
-    height: 630px;
-    width: 510px;
-    position: relative;
+.imageFrame {
+  height: 630px;
+  width: 510px;
+  position: relative;
 }
 
-.image{
-    object-fit: contain;
+.image {
+  object-fit: contain;
 }
 
-.productInfoFrame{
-    display: flex;
+.productInfoFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 380px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainFrame {
+    width: 100vw;
     flex-direction: column;
-    gap: 64px;
-    width: 380px;
+    align-items: start;
+    padding: 0 16px;
+    gap: 40px;
+  }
+  .imageFrame {
+    width: 260px;
+    height: 273px;
+  }
+  .productInfoFrame {
+    width: 100%;
+    gap: 40px;
+  }
 }
-
-@media screen and (max-width: 768px){
-    .mainFrame{
-        width: 100vw;
-        flex-direction: column;
-        align-items: start;
-        padding: 0 16px;
-        gap: 40px;
-    }
-    .imageFrame{
-        width: 260px;
-        height: 273px;
-    }
-    .productInfoFrame{
-        width: 100%;
-        gap: 40px;
-    }
-}
-
-
-

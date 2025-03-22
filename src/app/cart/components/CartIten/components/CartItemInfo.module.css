@@ -1,21 +1,21 @@
-.frame{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    grid-template-rows: repeat(1,1fr);
+.frame {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-template-rows: repeat(1, 1fr);
 }
-.text{
-    font-size: 12px;
-    font-weight: 300;
+.text {
+  font-size: 12px;
+  font-weight: 300;
 }
 
-@media screen and (max-width: 768px){
-    .frame{
-        gap: 20px;
-    }
-    .nameCapacity{
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
+@media screen and (max-width: 768px) {
+  .frame {
+    gap: 20px;
+  }
+  .nameCapacity {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
 }

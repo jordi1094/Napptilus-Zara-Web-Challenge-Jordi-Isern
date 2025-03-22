@@ -12,16 +12,16 @@ module.exports = {
     "^.+\\.(css|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
 
     // Handle image imports
-    "^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$": "<rootDir>/__mocks__/fileMock.js",
+    "^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$":
+      "<rootDir>/__mocks__/fileMock.js",
 
     // Handle module aliases
-    "^@/components/(.*)$": "<rootDir>/src/components/$1", 
-    "^@/pages/(.*)$": "<rootDir>/src/pages/$1",           
-    "^@/logic/(.*)$": "<rootDir>/src/logic/$1",           
+    "^@/components/(.*)$": "<rootDir>/src/components/$1",
+    "^@/pages/(.*)$": "<rootDir>/src/pages/$1",
+    "^@/logic/(.*)$": "<rootDir>/src/logic/$1",
 
     "^@/logic/cart$": "<rootDir>/src/logic/cart/index.js",
     "^@/data$": "<rootDir>/src/data",
-
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],

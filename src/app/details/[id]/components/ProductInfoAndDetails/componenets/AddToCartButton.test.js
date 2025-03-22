@@ -15,7 +15,11 @@ describe("AddToCartButton", () => {
   const mockRouterPush = jest.fn();
   const mockProduct = {
     name: "Galaxy S24 Ultra",
-    selectedColor: { name: "Titanium Yellow", hexCode: "#FFFF00", imageUrl: "some-url" },
+    selectedColor: {
+      name: "Titanium Yellow",
+      hexCode: "#FFFF00",
+      imageUrl: "some-url",
+    },
     selectedStorage: { capacity: "512 GB", price: 1329 },
   };
 
@@ -29,7 +33,7 @@ describe("AddToCartButton", () => {
         name={mockProduct.name}
         selectedColor={mockProduct.selectedColor}
         selectedStorage={mockProduct.selectedStorage}
-      />
+      />,
     );
     expect(screen.getByText("AÑADIR")).toBeInTheDocument();
   });
@@ -40,7 +44,7 @@ describe("AddToCartButton", () => {
         name={mockProduct.name}
         selectedColor={mockProduct.selectedColor}
         selectedStorage={mockProduct.selectedStorage}
-      />
+      />,
     );
 
     const button = screen.getByText("AÑADIR");
@@ -61,10 +65,10 @@ describe("AddToCartButton", () => {
       <AddToCartButton
         name={mockProduct.name}
         selectedStorage={mockProduct.selectedStorage}
-      />
+      />,
     );
     const button = screen.getByText("AÑADIR");
-    expect(button).toHaveClass("buttonDissable")
+    expect(button).toHaveClass("buttonDissable");
   });
 
   test("debe habilitar el botón cuando ambos selectedColor y selectedStorage están presentes", () => {
@@ -73,7 +77,7 @@ describe("AddToCartButton", () => {
         name={mockProduct.name}
         selectedColor={mockProduct.selectedColor}
         selectedStorage={mockProduct.selectedStorage}
-      />
+      />,
     );
     const button = screen.getByText("AÑADIR");
     expect(button).not.toHaveAttribute("buttonDissable");

@@ -1,35 +1,33 @@
-
-.selectors{
-    display: flex;
-    flex-direction: column;
-    gap:40px;
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.selectorFrame{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.selectorFrame {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
-.selectorTitle{
-    font-size: 14px;
-    font-weight: 300;
-    width: 305px;
-    height: 17px;
-}
-
-.colorName{
-    height: 15px;
-    font-size: 12px;
-    font-weight: 300;
+.selectorTitle {
+  font-size: 14px;
+  font-weight: 300;
+  width: 305px;
+  height: 17px;
 }
 
-@media screen and (max-width: 768px){
-    .selectors{
-        padding-bottom: 24px;
-        gap: 32px;
-        
-    }
-    .selectorFrame{
-        width: 273px;
-    }
+.colorName {
+  height: 15px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .selectors {
+    padding-bottom: 24px;
+    gap: 32px;
+  }
+  .selectorFrame {
+    width: 273px;
+  }
 }

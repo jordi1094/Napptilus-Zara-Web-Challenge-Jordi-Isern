@@ -1,18 +1,18 @@
-.titleAndPrice{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 11px;
+.titleAndPrice {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 11px;
 }
 
-.title{
-    height: 29px;
-    font-size: 24px;
-    font-weight: 300;
+.title {
+  height: 29px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.price{
-    height: 24px;
-    font-size: 20px;
-    font-weight: 300;
+.price {
+  height: 24px;
+  font-size: 20px;
+  font-weight: 300;
 }

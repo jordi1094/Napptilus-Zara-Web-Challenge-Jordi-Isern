@@ -11,8 +11,8 @@ jest.mock("./components/ProductSpec", () => ({ spect, spectDescription }) => (
 describe("ProductSpecsFrame Component", () => {
   const mockSpecs = {
     "Screen Size": "6.7 inches",
-    "Battery": "5000mAh",
-    "Storage": "128GB",
+    Battery: "5000mAh",
+    Storage: "128GB",
   };
 
   test("debe renderizar correctamente las especificaciones", () => {

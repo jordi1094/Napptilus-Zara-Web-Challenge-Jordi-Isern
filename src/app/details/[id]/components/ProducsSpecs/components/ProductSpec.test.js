@@ -8,15 +8,27 @@ describe("ProductSpec Component", () => {
   };
 
   test("debe renderizar correctamente la especificación y su descripción", () => {
-    render(<ProductSpec spect={mockSpec.spect} spectDescription={mockSpec.spectDescription} />);
+    render(
+      <ProductSpec
+        spect={mockSpec.spect}
+        spectDescription={mockSpec.spectDescription}
+      />,
+    );
 
     expect(screen.getByText(mockSpec.spect.toUpperCase())).toBeInTheDocument();
     expect(screen.getByText(mockSpec.spectDescription)).toBeInTheDocument();
   });
 
   test("la clave de la especificación debe estar en mayúsculas", () => {
-    render(<ProductSpec spect={mockSpec.spect} spectDescription={mockSpec.spectDescription} />);
+    render(
+      <ProductSpec
+        spect={mockSpec.spect}
+        spectDescription={mockSpec.spectDescription}
+      />,
+    );
 
-    expect(screen.getByText(mockSpec.spect.toUpperCase())).toHaveTextContent(mockSpec.spect.toUpperCase());
+    expect(screen.getByText(mockSpec.spect.toUpperCase())).toHaveTextContent(
+      mockSpec.spect.toUpperCase(),
+    );
   });
 });

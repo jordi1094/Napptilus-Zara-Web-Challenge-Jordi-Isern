@@ -1,10 +1,9 @@
-import data from "@/data"
+import data from "@/data";
 
-export default function deleteProduct (index) {
-    const dataRevived = data.get("cart")
+export default function deleteProduct(index) {
+  const dataRevived = data.get("cart");
 
-    
-    dataRevived.splice(index, 1)
+  dataRevived.splice(index, 1);
 
-    data.save(dataRevived, "cart")
+  data.save(dataRevived, "cart");
 }

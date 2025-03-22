@@ -1,9 +1,9 @@
-import get from "./get"
-import save from "./save"
+import get from "./get";
+import save from "./save";
 
 const data = {
-    get,
-    save
-}
+  get,
+  save,
+};
 
-export default data
+export default data;

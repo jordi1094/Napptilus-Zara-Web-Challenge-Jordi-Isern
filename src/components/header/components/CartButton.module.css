@@ -1,13 +1,12 @@
-.box{
-    align-items: center;
-    display: flex;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    gap: 6px;
+.box {
+  align-items: center;
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  gap: 6px;
 }
 
-.text{
-    font-size: 16px;
-    font-weight: 300;
+.text {
+  font-size: 16px;
+  font-weight: 300;
 }
-

@@ -1,19 +1,19 @@
-.page{
-    width: 100vw;
+.page {
+  width: 100vw;
 }
 
-.main{
-    margin-top: 80px;
-    border-top: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    padding: 48px 100px;
+.main {
+  margin-top: 80px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 48px 100px;
 }
 
-@media screen and (max-width: 768px){
-    .main{
-        width: 100%;
-        padding: 24px 16px;
-    }
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 24px 16px;
+  }
 }

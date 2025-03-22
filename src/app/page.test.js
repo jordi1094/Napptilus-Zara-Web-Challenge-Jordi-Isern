@@ -7,7 +7,9 @@ jest.mock("@/logic/index", () => ({
   getProductsList: jest.fn(),
 }));
 
-jest.mock("@/components/header/header", () => () => <header data-testid="header" />);
+jest.mock("@/components/header/header", () => () => (
+  <header data-testid="header" />
+));
 jest.mock("./components/SearchWrapper", () => ({ numOfPoducts, onSearch }) => (
   <div>
     <input
@@ -48,7 +50,9 @@ describe("Home Component", () => {
 
     await waitFor(() => {
       expect(logic.getProductsList).toHaveBeenCalledWith("");
-      expect(screen.getByTestId("product-grid")).toHaveTextContent("1 products rendered");
+      expect(screen.getByTestId("product-grid")).toHaveTextContent(
+        "1 products rendered",
+      );
     });
   });
 
@@ -65,7 +69,9 @@ describe("Home Component", () => {
 
     await waitFor(() => {
       expect(logic.getProductsList).toHaveBeenCalledWith("test");
-      expect(screen.getByTestId("product-grid")).toHaveTextContent("1 products rendered");
+      expect(screen.getByTestId("product-grid")).toHaveTextContent(
+        "1 products rendered",
+      );
     });
   });
 
@@ -78,7 +84,9 @@ describe("Home Component", () => {
     });
 
     await waitFor(() => {
-      expect(screen.getByTestId("product-count")).toHaveTextContent("2 products");
+      expect(screen.getByTestId("product-count")).toHaveTextContent(
+        "2 products",
+      );
     });
   });
 });
