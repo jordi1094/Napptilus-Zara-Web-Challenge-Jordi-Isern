@@ -13,6 +13,11 @@
   height: 24px;
   font-weight: 300;
   margin-left: calc((100vw - 1200px) / 2);
-  padding: 0 16px;
-  
+}
+
+
+@media screen and (max-width: 768px) {
+  .frame{
+    padding: 0 16px;
+  }
 }
