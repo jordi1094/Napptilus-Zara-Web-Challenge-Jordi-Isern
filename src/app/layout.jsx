@@ -1,6 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/header";
+import {Toaster} from "sonner"
 
 export const metadata = {
   title: "Movil shop",
@@ -8,9 +7,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}
+        <Toaster/>
+      </body>
+
     </html>
   );
 }

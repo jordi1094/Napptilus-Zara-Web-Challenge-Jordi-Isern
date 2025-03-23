@@ -15,7 +15,6 @@ describe('SingleStorageSelector', () => {
       />
     );
 
-    // Verifica si el texto del almacenamiento está en el documento
     const storageElement = screen.getByText(storage.capacity);
     expect(storageElement).toBeInTheDocument();
   });
@@ -31,7 +30,6 @@ describe('SingleStorageSelector', () => {
 
     const storageElement = screen.getByText(storage.capacity);
 
-    // Verifica si la clase 'selected' está aplicada cuando el almacenamiento está seleccionado
     expect(storageElement.parentElement).toHaveClass('selected');
   });
 
@@ -39,14 +37,13 @@ describe('SingleStorageSelector', () => {
     render(
       <SingleStorageSelector
         storage={storage}
-        selectedStorage={null} // No se selecciona el almacenamiento
+        selectedStorage={null}
         onClick={onClick}
       />
     );
 
     const storageElement = screen.getByText(storage.capacity);
 
-    // Verifica si la clase 'unselected' está aplicada cuando el almacenamiento no está seleccionado
     expect(storageElement.parentElement).toHaveClass('unselected');
   });
 

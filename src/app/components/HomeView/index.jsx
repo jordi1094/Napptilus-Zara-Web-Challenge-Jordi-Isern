@@ -6,6 +6,7 @@ import Header from "@/components/header/header";
 import logic from "@/logic/index";
 import {useDebounce} from "../../../hooks/useDebounce"
 import {useEffect, useState } from "react";
+import {toast, Toaster} from "sonner"
 
 
 export default function Home({defaultProductList}) {
@@ -15,10 +16,10 @@ export default function Home({defaultProductList}) {
   
   useEffect(() => {
     const getProducts = async () => {
-
+      
       const products = await logic.getProductsList(searchValue)
-
       setProdcutsList(products)
+
     }
     getProducts()
   },[searchValue])
@@ -27,7 +28,10 @@ export default function Home({defaultProductList}) {
     <div className={styles.page}>
       <Header/> 
       <SearchWrapper numOfPoducts={productsList.length} onSearch={setSearchQuery}/>
-      <ProductGrid productsList={productsList} />
+      {productsList.length > 0 ?
+      <ProductGrid productsList={productsList} />: <></>
+      }
+
     </div>
   );
 }

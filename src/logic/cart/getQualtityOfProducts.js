@@ -1,3 +1,11 @@
+/**
+ * Función que obtiene la cantidad de productos en el carrito de compras.
+ * 
+ * Esta función recupera la lista de productos almacenada en el carrito (usando `data.get("cart")`) 
+ * y retorna la cantidad de productos que hay en él, basándose en la longitud del array de productos.
+ * 
+ * @returns {number} - Retorna un número que representa la cantidad de productos en el carrito de compras.
+ */
 import data from "@/data";
 
 export default function getQuantityOfProducts() {
