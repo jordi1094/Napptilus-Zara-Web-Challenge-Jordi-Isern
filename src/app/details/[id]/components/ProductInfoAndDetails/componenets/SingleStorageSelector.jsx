@@ -14,6 +14,7 @@ export default function SingleStorageSelector({
   return (
     <div
       onClick={onClick}
+      role="StorageSelectorButton"
       className={status ? styles.selected : styles.unselected}
     >
       <h6 className={styles.text}>{storage.capacity}</h6>

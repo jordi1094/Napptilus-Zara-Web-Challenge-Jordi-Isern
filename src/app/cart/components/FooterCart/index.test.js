@@ -42,7 +42,7 @@ describe("FooterCart Component", () => {
     render(<FooterCart products={mockProducts} />);
 
     expect(screen.getByText("TOTAL")).toBeInTheDocument();
-    expect(screen.getByText("2648")).toBeInTheDocument(); // 1329 + 1319
+    expect(screen.getByText("2648 EUR")).toBeInTheDocument();
     expect(screen.getByText("CONTINUE SHOPPING")).toBeInTheDocument();
     expect(screen.getByText("PAY")).toBeInTheDocument();
   });

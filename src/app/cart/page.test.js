@@ -67,7 +67,7 @@ describe("Cart Component", () => {
       0,
     );
 
-    expect(screen.getByText(`${totalPrice}`)).toBeInTheDocument();
+    expect(screen.getByText(`${totalPrice} EUR`)).toBeInTheDocument();
 
     mockProducts.forEach((product) => {
       expect(screen.getByText(product.name.toUpperCase())).toBeInTheDocument();

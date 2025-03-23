@@ -1,6 +1,6 @@
 import style from "./SelectorsFrame.module.css";
 import StorageSelectors from "./StorageSelectors";
-import ColorsSelectors from "./Colorsselectors";
+import ColorsSelectors from "./ColorsSelectors";
 
 export default function SelectorsFrame({
   storageOptions,
@@ -27,7 +27,7 @@ export default function SelectorsFrame({
           setSelectedColor={setSelectedColor}
           selectedColor={selectedColor}
         />
-        <p className={style.colorName}>
+        <p className={style.colorName} role="colorName">
           {selectedColor ? selectedColor.name : " "}
         </p>
       </div>

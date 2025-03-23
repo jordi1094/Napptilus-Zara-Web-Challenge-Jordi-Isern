@@ -14,6 +14,7 @@ export default function ColorsSelectors({
             <SingleColorSelector
               key={index}
               color={color}
+              testId = {color.hexCode}
               onClick={() => {
                 setSelectedColor(colorOptions[index]);
               }}

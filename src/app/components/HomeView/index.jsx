@@ -4,7 +4,7 @@ import SearchWrapper from "../SearchWrapper";
 import ProductGrid from "../ProductsGrid";
 import Header from "@/components/header/header";
 import logic from "@/logic/index";
-import {useDebounce} from "@/hooks/useDebounce"
+import {useDebounce} from "../../../hooks/useDebounce"
 import {useEffect, useState } from "react";
 
 

@@ -16,6 +16,8 @@ module.exports = {
       "<rootDir>/__mocks__/fileMock.js",
 
     // Handle module aliases
+
+    '^@/(.*)$': '<rootDir>/src/$1',
     "^@/components/(.*)$": "<rootDir>/src/components/$1",
     "^@/pages/(.*)$": "<rootDir>/src/pages/$1",
     "^@/logic/(.*)$": "<rootDir>/src/logic/$1",

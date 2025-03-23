@@ -6,7 +6,7 @@ import Header from "@/components/header/header";
 import logic from "@/logic/index";
 import SimilarProducts from "./components/similar-products";
 
-export default async function details({ params }) {
+export default async function Details({ params }) {
   params = await params;
 
   const product = await logic.getProductDetails(params.id);
