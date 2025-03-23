@@ -1,6 +1,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import BackButtonFrame from "./index";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 jest.mock("next/navigation", () => ({
   useRouter: jest.fn(),
@@ -8,7 +9,7 @@ jest.mock("next/navigation", () => ({
 
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: ({ src, alt }) => <img src={src} alt={alt} />,
+  default: ({ src, alt }) => <Image src={src} alt={alt} />,
 }));
 
 describe("BackButtonFrame Component", () => {

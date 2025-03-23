@@ -1,3 +1,5 @@
+import data from "@/data";
+
 /**
  * Función que elimina un producto del carrito de compras.
  * 
@@ -8,9 +10,6 @@
  * 
  * @param {number} index - El índice del producto a eliminar de la lista del carrito.
  */
-
-import data from "@/data";
-
 export default function deleteProduct(index) {
   const dataRevived = data.get("cart");
 

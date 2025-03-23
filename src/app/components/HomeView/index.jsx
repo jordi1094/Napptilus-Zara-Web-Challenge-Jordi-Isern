@@ -6,7 +6,6 @@ import Header from "@/components/header/header";
 import logic from "@/logic/index";
 import {useDebounce} from "../../../hooks/useDebounce"
 import {useEffect, useState } from "react";
-import {toast, Toaster} from "sonner"
 
 
 export default function Home({defaultProductList}) {

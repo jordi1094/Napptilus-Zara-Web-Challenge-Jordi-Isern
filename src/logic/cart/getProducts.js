@@ -1,3 +1,5 @@
+import data from "@/data";
+
 /**
  * Función que obtiene la lista completa de productos en el carrito de compras.
  * 
@@ -6,8 +8,6 @@
  * 
  * @returns {Array} - Retorna un array que contiene todos los productos en el carrito de compras.
  */
-import data from "@/data";
-
 export default function getProdcuts() {
   const products = data.get("cart");
 

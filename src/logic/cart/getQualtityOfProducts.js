@@ -1,3 +1,5 @@
+import data from "@/data";
+
 /**
  * Función que obtiene la cantidad de productos en el carrito de compras.
  * 
@@ -6,8 +8,6 @@
  * 
  * @returns {number} - Retorna un número que representa la cantidad de productos en el carrito de compras.
  */
-import data from "@/data";
-
 export default function getQuantityOfProducts() {
   const products = data.get("cart");
 

@@ -9,7 +9,7 @@
 .totalFrame {
   display: flex;
   gap: 24px;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 .text {

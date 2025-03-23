@@ -1,3 +1,5 @@
+import data from "../../data/index";
+
 /**
  * Función que agrega un producto al carrito de compras.
  * 
@@ -6,10 +8,8 @@
  * Finalmente, la lista actualizada de productos se guarda nuevamente en el almacenamiento 
  * (usando `data.save`) para actualizar el carrito.
  * 
- * @param {Object} product - El producto que se desea agregar al carrito. Debe ser un objeto con los detalles del producto.
- */
-import data from "../../data/index";
-
+ * @param {Object} product - El producto que se desea agregar al carrito. Debe ser un objeto con los detalles del producto.  
+*/
 export default function addProduct(product) {
   const dataRecived = data.get("cart");
 
