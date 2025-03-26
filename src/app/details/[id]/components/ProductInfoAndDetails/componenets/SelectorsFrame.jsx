@@ -1,6 +1,6 @@
 import style from "./SelectorsFrame.module.css";
 import StorageSelectors from "./StorageSelectors";
-import ColorsSelectors from "./ColorsSelectors";
+import ColorsSelectors from "./Colorselectors";
 
 export default function SelectorsFrame({
   storageOptions,
