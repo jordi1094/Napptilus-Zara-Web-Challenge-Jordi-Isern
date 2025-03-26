@@ -2,9 +2,9 @@
 import { useState } from "react";
 import style from "./index.module.css";
 import Image from "next/image";
-import SelectorsFrame from "./componenets/SelectorsFrame";
-import ProductInfoFrame from "./componenets/ProductInfoFrame";
-import AddToCartButton from "./componenets/AddToCartButton";
+import SelectorsFrame from "./components/SelectorsFrame";
+import ProductInfoFrame from "./components/ProductInfoFrame";
+import AddToCartButton from "./components/AddToCartButton";
 
 export default function ProducInfoAndDetails({ product }) {
   const { name, storageOptions, colorOptions } = product;
