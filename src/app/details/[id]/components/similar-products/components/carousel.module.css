@@ -7,7 +7,7 @@
 }
 
 .carousel {
-  padding-left: calc((100vw - 1200px) / 2);
+  margin-left: calc((100vw - 1200px) / 2);
   margin-right: calc((100vw - 1200px) / 2);
   display: flex;
   overflow-x: visible;
@@ -22,7 +22,6 @@
 }
 .carouselContainer::-webkit-scrollbar-track {
   background-color: #cccccc;
-  margin-left: calc((100vw - 1200px) / 2);
   margin-right: calc((100vw - 1200px) / 2);
 }
 
