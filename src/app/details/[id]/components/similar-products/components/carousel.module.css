@@ -23,6 +23,7 @@
 .carouselContainer::-webkit-scrollbar-track {
   background-color: #cccccc;
   margin-right: calc((100vw - 1200px) / 2);
+  margin-left: calc((100vw - 1200px) / 2);
 }
 
 
