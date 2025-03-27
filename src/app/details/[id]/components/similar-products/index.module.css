@@ -1,5 +1,5 @@
 .frame {
-  padding-top: 154px;
+  padding-top: 40px;
   width: 100vw;
   padding-bottom: 104px;
   display: grid;
@@ -15,4 +15,10 @@
   margin-left: calc((100vw - 1200px) / 2);
 }
 
+
+@media screen and (max-width: 768px) {
+  .frame{
+    padding-top: 40px;
+  }
+}
 
